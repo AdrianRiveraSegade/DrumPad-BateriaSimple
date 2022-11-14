@@ -1,25 +1,14 @@
 "use strict";
 
-const botonesBateria = document.querySelectorAll(".bateria");
+let numberOfDrumButtons = document.querySelectorAll(".bateria").length;
+const crashC = document.querySelector(".a");
 
-const crash = new Audio("./sonido/crash.wav");
-const hatClose = new Audio("./sonido/hithat-close.wav");
-const hatOpen = new Audio("./sonido/hithat-open.wav");
-const kick = new Audio("./sonido/kick.wav");
-const ride = new Audio("./sonido/ride.wav");
-const snare = new Audio("./sonido/snare.wav");
-const tomLow = new Audio("./sonido/tom-low.wav");
-const tomMid = new Audio("./sonido/tom-mid.wav");
-const tomHigh = new Audio("./sonido/tom-high.wav");
+crashC.addEventListener("click", (e) => {
+  const crashC2 = new Audio("sonido/crash.wav");
+  crashC2.play();
+});
 
-for (let i = 0; i < botonesBateria; i++) {
-  document
-    .querySelectorAll(".bateria")
-    [i].addEventListener("click", function () {
-      const buttonInnerHTML = this.innerHTML;
-      makeSound(buttonInnerHTML);
-    });
-
+for (let i = 0; i < numberOfDrumButtons; i++) {
   document.addEventListener("keypress", function (event) {
     makeSound(event.key);
   });
@@ -28,10 +17,42 @@ for (let i = 0; i < botonesBateria; i++) {
 function makeSound(key) {
   switch (key) {
     case "a":
+      const crash = new Audio("sonido/crash.wav");
       crash.play();
       break;
     case "s":
-      hatClose.play();
+      const hhClose = new Audio("sonido/hihat-close.wav");
+      hhClose.play();
       break;
+    case "d":
+      const hhOpen = new Audio("sonido/hihat-open.wav");
+      hhOpen.play();
+      break;
+    case "f":
+      const kick = new Audio("sonido/kick.wav");
+      kick.play();
+      break;
+    case "g":
+      const ride = new Audio("sonido/ride,wav");
+      ride.play();
+      break;
+    case "h":
+      const snare = new Audio("sonido/snare.wav");
+      snare.play();
+      break;
+    case "j":
+      const tomLow = new Audio("sonido/tom-low.wav");
+      tomLow.play();
+      break;
+    case "k":
+      const tomMid = new Audio("sonido/tom-mid.wav");
+      tomMid.play();
+      break;
+    case "l":
+      const tomHigh = new Audio("sonido/tom.high.wav");
+      tomHigh.play();
+      break;
+    default:
+      console.log("esa tecla no mi rey");
   }
 }
