@@ -1,3 +1,7 @@
-p {
-  background-color: black;
+body {
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
 }
