@@ -51,5 +51,6 @@ button.k {
 }
 
 button.l {
+  background-color: aqua;
   grid-area: nLow;
 }
