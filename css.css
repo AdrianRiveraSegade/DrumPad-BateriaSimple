@@ -26,7 +26,9 @@ button {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  background-position: center;
   background-color: transparent;
+  background-repeat: no-repeat;
 }
 
 .a {
