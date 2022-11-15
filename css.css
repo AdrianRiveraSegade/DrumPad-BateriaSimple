@@ -1,7 +1,55 @@
 body {
   min-height: 100vh;
+  border: none;
 }
 
-ul {
-  list-style: none;
+button {
+  background-color: white;
+  border: none;
+}
+
+div.bateria {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "nEspacio nEspacio nCrash nRide"
+    "nOpen    nSnare   nHigh  nMid"
+    "nClosed  nKick    nKick  nLow";
+}
+
+button.a {
+  grid-area: nCrash;
+}
+
+button.s {
+  grid-area: nClose;
+}
+
+button.d {
+  grid-area: nOpen;
+}
+
+button.f {
+  grid-area: nKick;
+}
+
+button.g {
+  grid-area: nRide;
+}
+
+button.h {
+  grid-area: nSnare;
+}
+
+button.j {
+  grid-area: nHigh;
+}
+
+button.k {
+  grid-area: nMid;
+}
+
+button.l {
+  grid-area: nLow;
 }
