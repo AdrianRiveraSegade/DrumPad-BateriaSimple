@@ -10,9 +10,9 @@ button {
 
 div.bateria {
   display: grid;
-  grid-template-columns: repeat(4, 185px);
-  grid-template-rows: repeat(3, 200px);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1.5 fr);
+  grid-template-rows: repeat(3, 2fr);
+  gap: 0.05fr;
   grid-template-areas:
     "nEspacio nEspacio nCrash nRide"
     "nOpen    nSnare   nHigh  nMid"
@@ -52,6 +52,5 @@ button.k {
 }
 
 button.l {
-  background-color: aqua;
   grid-area: nLow;
 }
