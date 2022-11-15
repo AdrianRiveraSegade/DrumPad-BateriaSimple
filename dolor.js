@@ -2,58 +2,58 @@
 
 let numberOfDrumButtons = document.querySelectorAll(".bateria").length;
 const crashC = document.querySelector(".a");
-const hitClose = document.querySelector(".s");
-const hitOpen = document.querySelector(".d");
+const hitOpen = document.querySelector(".s");
+const hitClose = document.querySelector(".d");
 const kickS = document.querySelector(".f");
 const rideS = document.querySelector(".g");
 const snareS = document.querySelector(".h");
 const tomHigh = document.querySelector(".j");
 const tomLow = document.querySelector(".k");
 const tomMid = document.querySelector(".l");
+const crashC2 = new Audio("sonido/crash.wav");
+const hitClose2 = new Audio("sonido/hihat-close.wav");
+const hitOpen2 = new Audio("sonido/hihat-open.wav");
+const kickS2 = new Audio("sonido/kick.wav");
+const rideS2 = new Audio("sonido/ride.wav");
+const snareS2 = new Audio("sonido/snare.wav");
+const tomHigh2 = new Audio("sonido/tom-high.wav");
+const tomLow2 = new Audio("sonido/tom-low.wav");
+const tomMid2 = new Audio("sonido/tom-mid.wav");
 
 crashC.addEventListener("click", (e) => {
-  const crashC2 = new Audio("sonido/crash.wav");
   crashC2.play();
 });
 
 hitClose.addEventListener("click", (e) => {
-  const hitClose = new Audio("sonido/hihat-close.wav");
-  hitClose.play();
+  hitClose2.play();
 });
 
 hitOpen.addEventListener("click", (e) => {
-  const hitOpen = new Audio("sonido/hihat-open.wav");
-  hitOpen.play();
+  hitOpen2.play();
 });
 
 kickS.addEventListener("click", (e) => {
-  const kickS = new Audio("sonido/kick.wav");
-  kickS.play();
+  kickS2.play();
 });
 
 rideS.addEventListener("click", (e) => {
-  const rideS = new Audio("sonido/ride.wav");
-  rideS.play();
+  rideS2.play();
 });
 
 snareS.addEventListener("click", (e) => {
-  const snareS = new Audio("sonido/snare.wav");
-  snareS.play();
+  snareS2.play();
 });
 
 tomHigh.addEventListener("click", (e) => {
-  const tomHigh = new Audio("sonido/tom-high.wav");
-  tomHigh.play();
+  tomHigh2.play();
 });
 
 tomLow.addEventListener("click", (e) => {
-  const tomLow = new Audio("sonido/tom-low.wav");
-  tomLow.play();
+  tomLow2.play();
 });
 
 tomMid.addEventListener("click", (e) => {
-  const tomMid = new Audio("sonido/tom-mid.wav");
-  tomMid.play();
+  tomMid2.play();
 });
 
 //for (let i = 0; i < numberOfDrumButtons; i++) {
@@ -65,40 +65,31 @@ document.addEventListener("keypress", function (event) {
 function makeSound(key) {
   switch (key) {
     case "a":
-      const crash = new Audio("sonido/crash.wav");
-      crash.play();
+      crashC2.play();
       break;
     case "s":
-      const hhClose = new Audio("sonido/hihat-close.wav");
-      hhClose.play();
+      hitOpen2.play();
       break;
     case "d":
-      const hhOpen = new Audio("sonido/hihat-open.wav");
-      hhOpen.play();
+      hitClose2.play();
       break;
     case "f":
-      const kick = new Audio("sonido/kick.wav");
-      kick.play();
+      kickS2.play();
       break;
     case "g":
-      const ride = new Audio("sonido/ride.wav");
-      ride.play();
+      rideS2.play();
       break;
     case "h":
-      const snare = new Audio("sonido/snare.wav");
-      snare.play();
+      snareS2.play();
       break;
     case "j":
-      const tomLow = new Audio("sonido/tom-low.wav");
-      tomLow.play();
+      tomLow2.play();
       break;
     case "k":
-      const tomMid = new Audio("sonido/tom-mid.wav");
-      tomMid.play();
+      tomMid2.play();
       break;
     case "l":
-      const tomHigh = new Audio("sonido/tom-high.wav");
-      tomHigh.play();
+      tomHigh2.play();
       break;
     default:
       console.log("esa tecla no mi rey");
