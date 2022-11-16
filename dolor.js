@@ -1,6 +1,7 @@
 "use strict";
 
 let numberOfDrumButtons = document.querySelectorAll(".bateria").length;
+//En esta sección seleccionamos cada parte de la batería para futuro uso
 const crashC = document.querySelector(".a");
 const hitOpen = document.querySelector(".s");
 const hitClose = document.querySelector(".d");
@@ -10,6 +11,7 @@ const snareS = document.querySelector(".h");
 const tomHigh = document.querySelector(".j");
 const tomLow = document.querySelector(".k");
 const tomMid = document.querySelector(".l");
+//Aquí llamamos a los archivos de audio para usarlos cuando se toque la batería
 const crashC2 = new Audio("sonido/crash.wav");
 const hitClose2 = new Audio("sonido/hihat-close.wav");
 const hitOpen2 = new Audio("sonido/hihat-open.wav");
@@ -20,6 +22,9 @@ const tomHigh2 = new Audio("sonido/tom-high.wav");
 const tomLow2 = new Audio("sonido/tom-low.wav");
 const tomMid2 = new Audio("sonido/tom-mid.wav");
 const divBateriaElement = document.querySelector("div.bateria");
+
+//Aquí hacemos que al hacer click/tap en un elemento se
+//reproduzca el sonido y animación correspondientes
 
 crashC.addEventListener("click", (e) => {
   crashC.classList.add("animation");
@@ -75,11 +80,11 @@ tomMid.addEventListener("click", (e) => {
   tomMid2.play();
 });
 
-//for (let i = 0; i < numberOfDrumButtons; i++) {
+//Lo mismo que el apartado anterior pero al pulsar la tecla
+
 document.addEventListener("keypress", function (event) {
   makeSound(event.key);
 });
-//}
 
 function makeSound(key) {
   switch (key) {
@@ -133,6 +138,7 @@ function makeSound(key) {
   }
 }
 
+//Retiramos el elemento animation para que se pueda repetir
 divBateriaElement.addEventListener("animationend", (e) => {
   const target = e.target;
   target.classList.remove("animation");
