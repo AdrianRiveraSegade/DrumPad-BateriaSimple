@@ -1,23 +1,28 @@
+html,
 body {
   margin: 0;
-  max-height: 100vh;
-  max-width: 100vw;
-  overflow: hidden;
-  position: relative;
+  padding: 0;
+  height: 100vh;
 }
 
 div.bateria {
+  max-width: 100%;
+  max-height: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 10vh);
-  grid-template-rows: repeat(3, 10vh);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "nEspacio nEspacio nCrash nRide"
-    "nOpen    nSnare   nHigh  nMid"
-    "nClosed  nKick    nKick  nLow";
+    " nCrash nRide     nHigh"
+    "nOpen    nSnare   nMid"
+    "nClosed  nKick    nLow";
 }
 
-p {
-  position: absolute;
+img {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 button {
