@@ -19,40 +19,50 @@ const snareS2 = new Audio("sonido/snare.wav");
 const tomHigh2 = new Audio("sonido/tom-high.wav");
 const tomLow2 = new Audio("sonido/tom-low.wav");
 const tomMid2 = new Audio("sonido/tom-mid.wav");
+const divBateriaElement = document.querySelector("div.bateria");
 
 crashC.addEventListener("click", (e) => {
+  crashC.classList.add("animation");
   crashC2.play();
 });
 
 hitClose.addEventListener("click", (e) => {
+  hitClose.classList.add("animation");
   hitClose2.play();
 });
 
 hitOpen.addEventListener("click", (e) => {
+  hitOpen.classList.add("animation");
   hitOpen2.play();
 });
 
 kickS.addEventListener("click", (e) => {
+  kickS.classList.add("animation");
   kickS2.play();
 });
 
 rideS.addEventListener("click", (e) => {
+  rideS.classList.add("animation");
   rideS2.play();
 });
 
 snareS.addEventListener("click", (e) => {
+  snareS.classList.add("animation");
   snareS2.play();
 });
 
 tomHigh.addEventListener("click", (e) => {
+  tomHigh.classList.add("animation");
   tomHigh2.play();
 });
 
 tomLow.addEventListener("click", (e) => {
+  tomLow.classList.add("animation");
   tomLow2.play();
 });
 
 tomMid.addEventListener("click", (e) => {
+  tomMid.classList.add("animation");
   tomMid2.play();
 });
 
@@ -65,33 +75,47 @@ document.addEventListener("keypress", function (event) {
 function makeSound(key) {
   switch (key) {
     case "a":
+      crashC.classList.add("animation");
       crashC2.play();
       break;
     case "s":
+      hitOpen.classList.add("animation");
       hitOpen2.play();
       break;
     case "d":
+      hitClose.classList.add("animation");
       hitClose2.play();
       break;
     case "f":
+      kickS.classList.add("animation");
       kickS2.play();
       break;
     case "g":
+      rideS.classList.add("animation");
       rideS2.play();
       break;
     case "h":
+      snareS.classList.add("animation");
       snareS2.play();
       break;
     case "j":
+      tomLow.classList.add("animation");
       tomLow2.play();
       break;
     case "k":
+      tomMid.classList.add("animation");
       tomMid2.play();
       break;
     case "l":
+      tomHigh.classList.add("animation");
       tomHigh2.play();
       break;
     default:
       console.log("esa tecla no mi rey");
   }
 }
+
+divBateriaElement.addEventListener("animationend", (e) => {
+  const target = e.target;
+  target.classList.remove("animation");
+});
