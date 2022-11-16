@@ -16,6 +16,10 @@ div.bateria {
     "nClosed  nKick    nKick  nLow";
 }
 
+p {
+  position: absolute;
+}
+
 button {
   border: none;
   width: fit-content;
