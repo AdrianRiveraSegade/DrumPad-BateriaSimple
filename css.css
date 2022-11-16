@@ -44,11 +44,11 @@ button {
 }
 
 .s {
-  background-image: url(/imagenes/open\ hihat.png);
+  background-image: url(/imagenes/open hihat.png);
 }
 
 .d {
-  background-image: url(/imagenes/close\ hihat.png);
+  background-image: url(/imagenes/close hihat.png);
 }
 
 .f {
@@ -64,7 +64,7 @@ button {
 }
 
 .j {
-  background-image: url(/imagenes/tom\ grandecito.png);
+  background-image: url(/imagenes/tom grandecito.png);
 }
 
 .k {
@@ -72,7 +72,7 @@ button {
 }
 
 .l {
-  background-image: url(/imagenes/tom\ mediano.png);
+  background-image: url(/imagenes/tom mediano.png);
 }
 
 button.animation {
