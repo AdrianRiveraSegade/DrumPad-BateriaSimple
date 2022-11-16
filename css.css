@@ -4,28 +4,20 @@ body {
   overflow: hidden;
 }
 
-/* div.bateria {
+div.bateria {
   display: grid;
-  grid-template-columns: repeat(4, 1.5 fr);
-  grid-template-rows: repeat(3, 2fr);
+  grid-template-columns: repeat(4, 10vh);
+  grid-template-rows: repeat(3, 10vh);
   grid-template-areas:
     "nEspacio nEspacio nCrash nRide"
     "nOpen    nSnare   nHigh  nMid"
     "nClosed  nKick    nKick  nLow";
-} */
-
-/* div.bateria {
-  flex: auto;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 0;
-  position: relative;
-} */
+}
 
 button {
   border: none;
-  width: 250px;
-  height: 250px;
+  width: fit-content;
+  height: fit-content;
   border-radius: 50%;
   background-position: center;
   background-color: transparent;
