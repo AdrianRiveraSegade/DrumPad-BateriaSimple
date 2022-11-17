@@ -21,7 +21,7 @@ const snareS2 = new Audio("sonido/snare.wav");
 const tomHigh2 = new Audio("sonido/tom-high.wav");
 const tomLow2 = new Audio("sonido/tom-low.wav");
 const tomMid2 = new Audio("sonido/tom-mid.wav");
-const ulBateriaElement = document.querySelector("ul.bateria");
+const divBateriaElement = document.querySelector("ul#bateria");
 
 //Aquí hacemos que al hacer click/tap en un elemento se
 //reproduzca el sonido y animación correspondientes
@@ -139,7 +139,7 @@ function makeSound(key) {
 }
 
 //Retiramos el elemento animation para que se pueda repetir
-ulBateriaElement.addEventListener("animationend", (e) => {
+divBateriaElement.addEventListener("animationend", (e) => {
   const target = e.target;
   target.classList.remove("animation");
 });
