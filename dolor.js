@@ -143,3 +143,24 @@ divBateriaElement.addEventListener("animationend", (e) => {
   const target = e.target;
   target.classList.remove("animation");
 });
+
+const grabar = document.querySelector(".record");
+const stopRecord = document.querySelector(".stopRecord");
+const play = document.querySelector(".play");
+const pause = document.querySelector(".pause");
+
+grabar.addEventListener("click", (e) => {
+  grabar.classList.replace("record", "stopRecord");
+});
+
+play.addEventListener("click", (e) => {
+  play.classList.replace("play", "pause");
+});
+
+stopRecord.addEventListener("click", (e) => {
+  stopRecord.classList.replace("stopRecord", "record");
+});
+
+pause.addEventListener("click", (e) => {
+  pause.classList.replace("pause", "play");
+});
