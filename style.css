@@ -32,7 +32,7 @@ li {
   /* border: 2px solid black; */
   border-radius: 25px;
   text-align: center;
-  background-color: rgb(100, 50, 60);
+  background-color: rgb(50, 50, 60, 0.9);
 }
 
 .a {
@@ -89,6 +89,12 @@ li {
 
 .extraInfo {
   background-image: url(/imagenes/panas.png);
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(6, 0, 103);
 }
 
 li.animation {
@@ -105,4 +111,10 @@ li.animation {
   to {
     transform: scale(0.75);
   }
+}
+
+h1,
+h2,
+p {
+  text-align: center;
 }
