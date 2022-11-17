@@ -6,6 +6,7 @@
 
 body {
   height: 100vh;
+  background-color: rgb(128, 64, 0);
 }
 
 ul {
@@ -14,22 +15,24 @@ ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 5px;
+  gap: 15px;
+  padding: 15px;
 }
 
 li {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   font-size: large;
-  color: blueviolet;
+  color: rgb(6, 0, 113);
   border: none;
   background-position: center;
   /* background-color: transparent; */
   background-repeat: no-repeat;
   background-size: contain;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 25px;
   text-align: center;
+  background-color: rgb(150, 50, 40);
 }
 
 .a {
@@ -66,6 +69,18 @@ li {
 
 .l {
   background-image: url(/imagenes/tomMediano.png);
+}
+
+.record {
+  background-image: url(/imagenes/stopGrabar.png); /*ninguna de estas es png, asi que se ve chunga*/
+}
+
+.play {
+  background-image: url(/imagenes/pausa.png); /* esta cambiarla por la apropiada, la imagen play no es png*/
+}
+
+.extraInfo {
+  background-image: url(/imagenes/panas.png);
 }
 
 li.animation {
