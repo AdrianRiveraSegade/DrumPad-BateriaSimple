@@ -32,7 +32,7 @@ li {
   /* border: 2px solid black; */
   border-radius: 25px;
   text-align: center;
-  background-color: rgb(150, 50, 40);
+  background-color: rgb(150, 50, 60);
 }
 
 .a {
@@ -72,11 +72,19 @@ li {
 }
 
 .record {
-  background-image: url(/imagenes/stopGrabar.png); /*ninguna de estas es png, asi que se ve chunga*/
+  background-image: url(/imagenes/record.png);
+}
+
+.stopRecord {
+  background-image: url(/imagenes/stopRecord.png);
 }
 
 .play {
-  background-image: url(/imagenes/pausa.png); /* esta cambiarla por la apropiada, la imagen play no es png*/
+  background-image: url(/imagenes/play.png);
+}
+
+.pause {
+  background-image: url(/imagenes/pausa.png);
 }
 
 .extraInfo {
@@ -97,39 +105,4 @@ li.animation {
   to {
     transform: scale(0.75);
   }
-}
-button.a {
-  grid-area: nCrash;
-}
-
-button.s {
-  grid-area: nClosed;
-}
-
-button.d {
-  grid-area: nOpen;
-}
-
-button.f {
-  grid-area: nKick;
-}
-
-button.g {
-  grid-area: nRide;
-}
-
-button.h {
-  grid-area: nSnare;
-}
-
-button.j {
-  grid-area: nHigh;
-}
-
-button.k {
-  grid-area: nMid;
-}
-
-button.l {
-  grid-area: nLow;
 }
