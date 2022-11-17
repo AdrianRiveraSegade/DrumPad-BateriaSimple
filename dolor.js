@@ -23,61 +23,90 @@ const tomLow2 = new Audio("sonido/tom-low.wav");
 const tomMid2 = new Audio("sonido/tom-mid.wav");
 const divBateriaElement = document.querySelector("ul#bateria");
 
+//Aquí declaramos las funciones para reproducir las animaciones y sonidos
+function crashPlay() {
+  crashC.classList.add("animation");
+  crashC2.load();
+  crashC2.play();
+}
+
+function tomHighPlay() {
+  tomHigh.classList.add("animation");
+  tomHigh2.load();
+  tomHigh2.play();
+}
+function tomMidPlay() {
+  tomMid.classList.add("animation");
+  tomMid2.load();
+  tomMid2.play();
+}
+function tomLowPlay() {
+  tomLow.classList.add("animation");
+  tomLow2.load();
+  tomLow2.play();
+}
+function snarePlay() {
+  snareS.classList.add("animation");
+  snareS2.load();
+  snareS2.play();
+}
+function ridePlay() {
+  rideS.classList.add("animation");
+  rideS2.load();
+  rideS2.play();
+}
+function kickPlay() {
+  kickS.classList.add("animation");
+  kickS2.load();
+  kickS2.play();
+}
+function hitClosPlay() {
+  hitClose.classList.add("animation");
+  hitClose2.load();
+  hitClose2.play();
+}
+function hitOpPlay() {
+  hitOpen.classList.add("animation");
+  hitOpen2.load();
+  hitOpen2.play();
+}
 //Aquí hacemos que al hacer click/tap en un elemento se
 //reproduzca el sonido y animación correspondientes
 
 crashC.addEventListener("click", (e) => {
-  crashC.classList.add("animation");
-  crashC2.load();
-  crashC2.play();
+  crashPlay();
 });
 
 hitClose.addEventListener("click", (e) => {
-  hitClose.classList.add("animation");
-  hitClose2.load();
-  hitClose2.play();
+  hitClosPlay();
 });
 
 hitOpen.addEventListener("click", (e) => {
-  hitOpen.classList.add("animation");
-  hitOpen2.load();
-  hitOpen2.play();
+  hitOpPlay();
 });
 
 kickS.addEventListener("click", (e) => {
-  kickS.classList.add("animation");
-  kickS2.load();
-  kickS2.play();
+  kickPlay();
 });
 
 rideS.addEventListener("click", (e) => {
-  rideS.classList.add("animation");
-  rideS2.load();
-  rideS2.play();
+  ridePlay();
 });
 
 snareS.addEventListener("click", (e) => {
-  snareS.classList.add("animation");
-  snareS2.load();
-  snareS2.play();
+  snarePlay();
 });
 
 tomHigh.addEventListener("click", (e) => {
-  tomHigh.classList.add("animation");
-  tomHigh2.load();
-  tomHigh2.play();
+  tomHighPlay();
 });
 
 tomLow.addEventListener("click", (e) => {
-  tomLow.classList.add("animation");
-  tomLow2.load();
-  tomLow2.play();
+  tomLowPlay();
 });
 
 tomMid.addEventListener("click", (e) => {
-  tomMid.classList.add("animation");
-  tomMid2.load();
-  tomMid2.play();
+  tomMidPlay();
 });
 
 //Lo mismo que el apartado anterior pero al pulsar la tecla
@@ -89,49 +118,31 @@ document.addEventListener("keypress", function (event) {
 function makeSound(key) {
   switch (key) {
     case "a":
-      crashC.classList.add("animation");
-      crashC2.load();
-      crashC2.play();
+      crashPlay();
       break;
     case "s":
-      hitOpen.classList.add("animation");
-      hitOpen2.load();
-      hitOpen2.play();
+      hitOpPlay();
       break;
     case "d":
-      hitClose.classList.add("animation");
-      hitClose2.load();
-      hitClose2.play();
+      hitClosPlay();
       break;
     case "f":
-      kickS.classList.add("animation");
-      kickS2.load();
-      kickS2.play();
+      kickPlay();
       break;
     case "g":
-      rideS.classList.add("animation");
-      rideS2.load();
-      rideS2.play();
+      ridePlay();
       break;
     case "h":
-      snareS.classList.add("animation");
-      snareS2.load();
-      snareS2.play();
+      snarePlay();
       break;
     case "j":
-      tomLow.classList.add("animation");
-      tomLow2.load();
-      tomLow2.play();
+      tomLowPlay();
       break;
     case "k":
-      tomMid.classList.add("animation");
-      tomMid2.load();
-      tomMid2.play();
+      tomMidPlay();
       break;
     case "l":
-      tomHigh.classList.add("animation");
-      tomHigh2.load();
-      tomHigh2.play();
+      tomHighPlay();
       break;
     default:
       console.log("esa tecla no mi rey");
