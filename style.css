@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  background-color: rgb(128, 64, 0);
+  background-color: rgb(115, 60, 15);
 }
 
 ul {
@@ -32,7 +32,7 @@ li {
   /* border: 2px solid black; */
   border-radius: 25px;
   text-align: center;
-  background-color: rgb(150, 50, 60);
+  background-color: rgb(100, 50, 60);
 }
 
 .a {
