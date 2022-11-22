@@ -23,7 +23,7 @@ li {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   font-size: large;
-  color: rgb(6, 0, 113);
+  color: rgb(235, 8, 8);
   border: none;
   background-position: center;
   /* background-color: transparent; */
@@ -94,7 +94,7 @@ li {
 
 a {
   text-decoration: none;
-  color: rgb(6, 0, 103);
+  color: rgb(199, 13, 13);
 }
 
 li.animation {
